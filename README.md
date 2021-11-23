@@ -4,7 +4,7 @@ Configuration files for a DevOps VM used during tutorials
 
 ## Configure the service
 
-Install Git: `sudo apt install git`.
+Install prerequisites: `sudo apt install curl git`.
 
 Create the main script `sudo nano /usr/local/bin/devopsvm.sh`.
 
