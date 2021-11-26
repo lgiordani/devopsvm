@@ -4,7 +4,10 @@ DEVOPSVM_PATH=/opt/devopsvm
 
 if [[ ! -d ${DEVOPSVM_PATH} ]]; then mkdir ${DEVOPSVM_PATH}; fi
 
-sudo apt-get update
+sudo apt update
+
+# Install SSH
+sudo apt install openssh-server net-tools
 
 # Install Docker
 # https://docs.docker.com/engine/install/ubuntu/#installation-methods
