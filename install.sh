@@ -10,3 +10,8 @@ chmod 775 /usr/local/bin/devopsvm.sh
 cp devopsvm.service /etc/systemd/system/
 chmod 664 /etc/systemd/system/devopsvm.service
 
+systemctl daemon-reload
+systemctl enable devopsvm
+
+# Run the service now
+/usr/local/bin/devopsvm.sh
