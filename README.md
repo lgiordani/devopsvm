@@ -18,6 +18,8 @@ In the main VirtualBox window, select `File > Import Appliance...`, then select 
 
 Once the VM has been imported you can run it double clicking on it. The default user is `thejump` and the password is the same.
 
+The Virtual Machine has a bidirectional clipboard active (check `Devices > Shared Clipboard` in the VM window). Remeber that you can copy from and paste to Linux terminals with `Ctrl + Shift + c` and `Ctrl + Shift + v`.
+
 ## Create the service
 
 Log into the virtual machine, open a terminal, clone this repository
@@ -41,3 +43,4 @@ cd ..
 rm -fR devopsvm
 ```
 
+Once the installation script has finished, please reboot the VM, then log in and check that you can run `docker ps`.
