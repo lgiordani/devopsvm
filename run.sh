@@ -7,7 +7,7 @@ if [[ ! -d ${DEVOPSVM_PATH} ]]; then mkdir ${DEVOPSVM_PATH}; fi
 sudo apt update
 
 # Install SSH
-sudo apt install -y curl openssh-server net-tools
+sudo apt install -y curl openssh-server net-tools python3
 
 if [[ -z $(which docker) ]]; then
     # Install Docker
